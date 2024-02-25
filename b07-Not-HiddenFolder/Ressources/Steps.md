@@ -1,5 +1,6 @@
-# B10-HiddenFolder
+# B10-Not-HiddenFolder
 
+## BREACH
 PATH `http://192.168.56.110/.hidden/`
 
 Pour cette faille nous commencons par afficher le fichier `robots.txt` qui est un fichier courant sur les sites web et qui fournit des informations interressantes.
@@ -56,3 +57,7 @@ Et en le lancant
 ➜  Darkly git:(main) ✗ python3 b10-hiddenfolder/Ressources/parse.py
 http://192.168.56.110/.hidden/whtccjokayshttvxycsvykxcfm//igeemtxnvexvxezqwntmzjltkt//lmpanswobhwcozdqixbowvbrhw//README->Hey, here is your flag : d5eec3ec36cf80dce44a896f961c1831a05526ec215693c8f2c39543497d4466
 ```
+
+## PATCH
+
+Au lieu d'essayer de cacher un dossier, juste empeche a l'utilisateurs de faire des requetes sur cette route et comme ca il sera vraiment inaccessible.
