@@ -26,12 +26,10 @@ root:437394baff5aa33daa618be47b75cb49
 
 En utilisant `dirb` pour scanner notre site, on voit au'il y a une page `admin`
 
-On suppose que le mot de passe est encrypter donc on utilise john pour le decrypter, on se connecte, et on obtient le flag.
+On suppose que le mot de passe est encrypter donc on le decrypt (MD5), on se connecte `root:qwerty123@`, et on obtient le flag.
 
+> https://md5decrypt.net/
 
-1. use "dirb" to scan the website and get all common file
-2. You can see a file named "whatever/htpasswd"
-3. Open it and see something like login:password
-4. Decode password (md5encrypt)
-5. Dirb show us also an admin page, go on it
-6. Enter le password decrypted and the login and get your flag
+# PATCH
+
+Pour patcher tout simplement ne pas laisser trainer des mot de passes accessible aux utilisateurs, utiliser des methodes d'encryption plus fortes, utiliser un mot de passe plus complexe ou encore autoriser la connection a la page admin uniquement depuis certaines IP.
