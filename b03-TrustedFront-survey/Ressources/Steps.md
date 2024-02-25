@@ -1,4 +1,6 @@
-# B04-SurveyVote
+# B03-TrustedFront-SurveyVote
+
+##  BREACH
 
 PATH `http://192.168.56.110/index.php?page=survey#`
 
@@ -42,3 +44,10 @@ On modifie les values
 ```
 THE FLAG IS 03A944B434D5BAFF05F46C4BEDE5792551A2595574BCAFC9A6E25F67C382CCAA
 ```
+
+## PATCH
+
+Quand tu fais un site web, une regle majeur est de ne jamais faire confiance au `front` pour des donnees importantes
+car l'utilisateur peux tout modifier a sa convenance.
+
+Ici la value envoyer est directement utiliser pour impacter les resultats du vote donc l'utilisateur peux facilement la modifier. Pour regler cela, il suffit de faire un check dans le back pour s'assurer que les valeurs sont bien compris entre les valeurs possibles soit entre `1 et 10`

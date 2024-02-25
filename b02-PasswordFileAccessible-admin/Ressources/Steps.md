@@ -1,4 +1,6 @@
-# B10-HiddenFolder
+# B10-PasswordFileAccessible-Admin
+
+## BREACH
 
 PATH `http://192.168.56.110/admin/`
 
@@ -30,6 +32,6 @@ On suppose que le mot de passe est encrypter donc on le decrypt (MD5), on se con
 
 > https://md5decrypt.net/
 
-# PATCH
+## PATCH
 
 Pour patcher tout simplement ne pas laisser trainer des mot de passes accessible aux utilisateurs, utiliser des methodes d'encryption plus fortes, utiliser un mot de passe plus complexe ou encore autoriser la connection a la page admin uniquement depuis certaines IP.
