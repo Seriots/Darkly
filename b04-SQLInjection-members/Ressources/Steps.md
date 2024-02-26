@@ -54,6 +54,6 @@ For patch this one we have to `improve` the `sanitization/validation` of input p
 
 to `block sql injection`.
 
-Stop writing dynamic queries with string concatenation or
+`Stop` writing `dynamic queries` with string concatenation or
 
 Prevent malicious SQL input from being included in executed queries.
