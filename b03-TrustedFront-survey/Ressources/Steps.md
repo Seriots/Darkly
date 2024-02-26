@@ -4,11 +4,12 @@
 
 PATH `http://192.168.56.110/index.php?page=survey#`
 
-Pour celui-ci nous allons sur la page `survey` et on peux voir un systeme de vote.
+For this one, we go to the `survey` page and we can see a voting system.
 
-En inspectant le code, on peux voir que les notes que nous mettons sont directement passer dans le code en tant que valeur, donc si on change cette valuer pour quelque chose de tres grand on peux fausser le vote.
+Inspecting the code, we can see that the ratings we input are directly passed into the code as values, so if we change this value to something very large, we can manipulate the vote.
 
-On test
+We test
+
 
 ```
 <tr bgcolor="Silver">
@@ -35,7 +36,7 @@ On test
 		</tr>
 ```
 
-On modifie les values
+We modify the values
 
 ```
 <option value="1000000">10</option>
@@ -47,7 +48,6 @@ THE FLAG IS 03A944B434D5BAFF05F46C4BEDE5792551A2595574BCAFC9A6E25F67C382CCAA
 
 ## PATCH
 
-Quand tu fais un site web, une regle majeur est de ne jamais faire confiance au `front` pour des donnees importantes
-car l'utilisateur peux tout modifier a sa convenance.
+When building a website, a major rule is to never trust the front end with important data because the user can easily modify it as they wish.
 
-Ici la value envoyer est directement utiliser pour impacter les resultats du vote donc l'utilisateur peux facilement la modifier. Pour regler cela, il suffit de faire un check dans le back pour s'assurer que les valeurs sont bien compris entre les valeurs possibles soit entre `1 et 10`
+Here, the value sent is directly used to impact the voting results, so the user can easily modify it. To fix this, simply perform a check in the backend to ensure that the values are within the possible range, i.e., between `1 and 10`.

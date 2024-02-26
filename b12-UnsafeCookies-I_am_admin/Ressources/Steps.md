@@ -2,16 +2,16 @@
 
 ## BREACH
 
-En inspectant nos cookies sur le site nous pouvons voir un cookie nomme `I_am_admin`.
+Upon inspecting our cookies on the website, we can see a cookie named `I_am_admin`.
 
-En le decryptant (MD5) on peux voir qu'il vaux `false`.
+By decrypting it (MD5), we can see that its value is `false`.
 
-On peux alors le remplacer par le `hash MD5` de `true` soit `b326b5062b2f0e69046810717534cb09` via la page internet.
+We can then replace it with the MD5 hash of `true`, which is `b326b5062b2f0e69046810717534cb09`, via the webpage.
 
-On obtient alors un flag.
+We then obtain a flag.
 
 ## PATCH
 
-On me peux pqs faire confiance au frontend. Les cookies peuvent etre modifie a volonte par l'utilisateurs donc des donnees importantes comme la connection d'un admin ne peuvent pas etre stocker comme ca.
+We cannot trust the frontend. Cookies can be modified at will by the user, so important data such as the admin's login status cannot be stored like this.
 
-A la place on encoder des donnees avec des hash plus complexe en mettant des data seulement connus du backend permettant une double verification de l'utilisateur.
+Instead, we encode data with more complex hashes, using data known only to the backend, allowing for double verification of the user.

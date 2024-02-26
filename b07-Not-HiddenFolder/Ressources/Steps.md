@@ -3,7 +3,8 @@
 ## BREACH
 PATH `http://192.168.56.110/.hidden/`
 
-Pour cette faille nous commencons par afficher le fichier `robots.txt` qui est un fichier courant sur les sites web et qui fournit des informations interressantes.
+For this vulnerability, we start by displaying the `robots.txt` file, which is a common file on websites and provides interesting information.
+
 
 ```
 User-agent: *
@@ -11,7 +12,8 @@ Disallow: /whatever
 Disallow: /.hidden
 ```
 
-On peux y voir un path `/.hidden` qui contient un README et plein de dossier avec des noms aleatoires
+We can see a path `/.hidden` that contains a README and many folders with random names.
+
 
 ```
 Index of /.hidden/
@@ -45,13 +47,13 @@ zzfzjvjsupgzinctxeqtzzdzll/                        29-Jun-2021 18:15            
 README                                             29-Jun-2021 18:15                  34
 ```
 
-En regardant on voit que chaque dossier contiennent plein d'autres dossier et encore de meme pour les suivants
+Looking at it, we see that each folder contains many other folders, and so on for the subsequent ones.
 
-On comprend qu'un `fichier` doit contenir un flag donc on ecrit un petit script qui va scrap de maniere recursive le dossier .hidden pour recuperer tout les fichiers `README` et regarder si il y a un flag a l'interieur.
+We understand that a `file` must contain a flag, so we write a small script that will recursively scrape the .hidden folder to retrieve all the `README` files and check if there is a flag inside.
 
 > [Script](parse.py)
 
-Et en le lancant
+And by running it
 
 ```
 ➜  Darkly git:(main) ✗ python3 b10-hiddenfolder/Ressources/parse.py
@@ -60,4 +62,4 @@ http://192.168.56.110/.hidden/whtccjokayshttvxycsvykxcfm//igeemtxnvexvxezqwntmzj
 
 ## PATCH
 
-Au lieu d'essayer de cacher un dossier, juste empeche a l'utilisateurs de faire des requetes sur cette route et comme ca il sera vraiment inaccessible.
+Instead of trying to hide a folder, just prevent users from making requests to this route, making it truly inaccessible.

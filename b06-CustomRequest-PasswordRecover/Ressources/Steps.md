@@ -4,11 +4,12 @@
 
 PATH `http://192.168.56.110/?page=recover`
 
-Depuis la page principale on peux se connecter, il y a un bouton `I forgot my password`.
+From the main page, we can log in, there is a button `I forgot my password`.
 
-En clickant dessus on arrive sur une page qui semble envoyer un mail de recover.
+By clicking on it, we arrive on a page that seems to send a recovery email.
 
-En inspectant le code, on voit qu'il y a une adresse en clair dans le code de la page, en la remplacant par notre addresse mail a nous on peux supposer que le site nous enverras un mail qui nous permettras d'avoir des acces.
+Inspecting the code, we see that there is an email address in clear in the page's code. By replacing it with our own email address, we can assume that the site will send us an email that will allow us to gain access.
+
 
 ```
 <form action="#" method="POST">
@@ -17,7 +18,7 @@ En inspectant le code, on voit qu'il y a une adresse en clair dans le code de la
 </form>
 ```
 
-On peux alors faire une requetes avec curl en envoyant un formulaire contenant notre adresse email
+We can then make a request with curl by sending a form containing our email address.
 
 ```
 ➜  Darkly git:(main) ✗ curl -X POST http://192.168.x.x/\?page\=recover -d "mail=lgiband@student.42.fr&Submit=Submit" | grep "flag"
@@ -29,4 +30,4 @@ On peux alors faire une requetes avec curl en envoyant un formulaire contenant n
 
 ## PATCH
 
-Il ne faut pas faire confiance au front, il faut se fier a des donnees du backend pour envoyer un email en demandant a l'utilisateur de rentrer son adresse mail et verifier si un compte est associe avec par exemple.
+Do not trust the front end, rely on backend data to send an email by asking the user to enter their email address and verifying if an account is associated with it, for example.

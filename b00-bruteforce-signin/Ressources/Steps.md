@@ -3,17 +3,16 @@
 ## BREACH
 PATH `http://192.168.55.3/?page=signin&username={}&password={}&Login=Login#`
 
-Pour cette faille nous avons une page de connection demandant un `username` et un `password` qui sont ensuite passer en `query arguments` pour faire une requete au backend.
+For this vulnerability, we have a login page asking for a `username` and a `password`, which are then passed as query arguments to make a request to the backend.
 
-Nous pouvons supposer qu'il doit y avoir des users par defaults tels que admin ou root
+We can assume that there are default users such as admin or root.
 
-Nous pouvons donc essayer de bruteforce le mot de passe avec une liste des mots de passes les plus commun on prend `rockyou.txt`
+So, we can try to brute-force the password using a list of common passwords like `rockyou.txt`.
 
-On ecrit un petit script et on attend.
+We write a small script and wait.
 
-Le script nous trouve le mot de passe au bout de 20sec et nous pouvons nous connecter avec `admin:shadow`
+The script finds the password after 20 seconds, and we can log in with `admin:shadow`.
 
 ## PATCH
 
-Il y a diverses manieres d'empecher une attaque bruteforce mais l'idee principale est toujours la meme, empecher
-l'attaquant de faire des milliers de requetes a la secondes. Pour cela on peux simplement bloquer l'IP d'un utilisateurs mettant des mot de passes faux en boucle pour une certaine duree, ou faire en sorte d'empecher une automatisations de la connections avec des CAPTCHAs. 
+There are various ways to prevent a brute-force attack, but the main idea is always the same: prevent the attacker from making thousands of requests per second. To do this, we can simply block the IP of a user who enters incorrect passwords repeatedly for a certain duration, or prevent automation of login attempts with CAPTCHAs.
