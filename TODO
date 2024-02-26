@@ -9,6 +9,6 @@
 [x] b08-UserAgentAndReferer-Albatroz
 [x] b09-UploadInsecure-Upload
 [x] b10-LocalFileInclusion-pageQuery
-[ ] b11-Redirect-WebsiteRedirect
+[x] b11-Redirect-WebsiteRedirect
 [x] b12-UnsafeCookies-I_am_admin
 [x] b13-ReflectedXSS-nsaPage
