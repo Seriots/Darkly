@@ -9,7 +9,7 @@ def req(url):
 	print("Trying: " + url.split("password=")[1].split("&")[0])
 	return response
 
-host = "192.168.55.3"
+host = "192.168.56.110"
 url = f"http://{host}/?page=signin&username=admin&password="
 login = "&Login=Login#"
 

@@ -10,5 +10,5 @@
 [ ] b09-UploadInsecure-Upload
 [x] b10-LocalFileInclusion-pageQuery
 [ ] b11-Redirect-WebsiteRedirect
-[ ] b12-UnsafeCookies-I_am_admin
+[x] b12-UnsafeCookies-I_am_admin
 [ ] b13-nsaPage

