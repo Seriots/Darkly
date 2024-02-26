@@ -3,7 +3,7 @@
 [x] b02-PasswordFileAccessible
 [x] b03-TrustedFront-survey
 [x] b04-SQLInjection-members
-[ ] b05-BlindSQLInjection-searchImage
+[x] b05-BlindSQLInjection-searchImage
 [x] b06-CustomRequest-PasswordRecover
 [x] b07-Not-HiddenFolder
 [ ] b08-UserAgentAndReferer-Albatroz
