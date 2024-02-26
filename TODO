@@ -1,14 +1,14 @@
 [x] b00-bruteforce-signin
-[ ] b01-StoredXSS-feedback
+[x] b01-StoredXSS-feedback
 [x] b02-PasswordFileAccessible
 [x] b03-TrustedFront-survey
 [x] b04-SQLInjection-members
 [x] b05-BlindSQLInjection-searchImage
 [x] b06-CustomRequest-PasswordRecover
 [x] b07-Not-HiddenFolder
-[ ] b08-UserAgentAndReferer-Albatroz
+[x] b08-UserAgentAndReferer-Albatroz
 [x] b09-UploadInsecure-Upload
 [x] b10-LocalFileInclusion-pageQuery
 [ ] b11-Redirect-WebsiteRedirect
 [x] b12-UnsafeCookies-I_am_admin
-[ ] b13-nsaPage
+[x] b13-ReflectedXSS-nsaPage
