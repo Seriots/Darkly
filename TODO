@@ -1,5 +1,5 @@
 [x] b00-bruteforce-signin
-[ ] b01-SimpleXSS-feedback
+[ ] b01-StoredXSS-feedback
 [x] b02-PasswordFileAccessible
 [x] b03-TrustedFront-survey
 [x] b04-SQLInjection-members
