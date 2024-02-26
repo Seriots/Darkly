@@ -6,7 +6,7 @@
 [x] b05-BlindSQLInjection-searchImage
 [x] b06-CustomRequest-PasswordRecover
 [x] b07-Not-HiddenFolder
-[ ] b08-UserAgentAndReferer-Albatroz
+[x] b08-UserAgentAndReferer-Albatroz
 [x] b09-UploadInsecure-Upload
 [x] b10-LocalFileInclusion-pageQuery
 [ ] b11-Redirect-WebsiteRedirect
